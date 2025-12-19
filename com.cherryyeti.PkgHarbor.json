@@ -1,0 +1,41 @@
+{
+  "app-id": "com.cherryyeti.PkgHarbor",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "49",
+  "sdk": "org.gnome.Sdk",
+  "command": "com.cherryyeti.PkgHarbor",
+  "finish-args": [
+    "--share=network",
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--socket=session-bus",
+    "--device=dri",
+    "--filesystem=xdg-run/gvfsd",
+    "--filesystem=xdg-download"
+  ],
+  "modules": [
+    {
+      "name": "pkg-harbor",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -D src/main.py /app/bin/com.cherryyeti.PkgHarbor",
+        "install -D src/application.py /app/bin/application.py",
+        "install -D src/window.py /app/bin/window.py",
+        "install -D src/dialogs.py /app/bin/dialogs.py",
+        "install -D src/config.py /app/bin/config.py",
+        "install -D src/tsv_downloader.py /app/bin/tsv_downloader.py",
+        "install -D src/tsv_parser.py /app/bin/tsv_parser.py",
+        "chmod +x /app/bin/com.cherryyeti.PkgHarbor",
+        "install -D data/com.cherryyeti.PkgHarbor.desktop /app/share/applications/com.cherryyeti.PkgHarbor.desktop",
+        "install -D data/com.cherryyeti.PkgHarbor.metainfo.xml /app/share/metainfo/com.cherryyeti.PkgHarbor.metainfo.xml",
+        "install -D -m644 icons/hicolor/scalable/apps/com.cherryyeti.PkgHarbor.svg /app/share/icons/hicolor/scalable/apps/com.cherryyeti.PkgHarbor.svg"
+      ],
+      "sources": [
+        {
+          "type": "dir",
+          "path": "."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=PkgHarbor
+Comment=Download and unpack NoPayStation games directly to your PC
+Exec=com.cherryyeti.PkgHarbor
+Icon=com.cherryyeti.PkgHarbor
+Terminal=false
+Type=Application
+Categories=Development                                             ;GTK;
+StartupNotify=true
