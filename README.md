@@ -1,6 +1,6 @@
-[SVG Logo for PkgHarbor](./.assets/icon.png)
+[SVG Logo for PkgHarbor](https://codeberg.org/CherryYeti/PkgHarbor/raw/branch/main/.assets/icon.png)
 
-[Screenshot of PkgHarbor](./.assets/screenshot.png)
+[Screenshot of PkgHarbor](https://codeberg.org/CherryYeti/PkgHarbor/raw/branch/main/.assets/screenshot.png)
 # Features
 - Download and unpack NoPayStation games directly to your PC
 
