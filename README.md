@@ -1,12 +1,16 @@
-[SVG Logo for PkgHarbor](https://codeberg.org/CherryYeti/PkgHarbor/raw/branch/main/.assets/icon.png)
+<p align="center">
+  <img src="./.assets/icon.png" alt="SVG Logo for PkgHarbor">
+</p>
 
-[Screenshot of PkgHarbor](https://codeberg.org/CherryYeti/PkgHarbor/raw/branch/main/.assets/screenshot.png)
+<p align="center">
+  <img src="./.assets/screenshot.png" alt="Screenshot of PkgHarbor">
+</p>
+
 # Features
 - Download and unpack NoPayStation games directly to your PC
 
 # Warning
 - This code is awful, this is something I threw together because I hated having to use wine or terminal scripts to get ps3 games
-
 
 # Building and Running
 You need both `flatpak` and `flatpak-builder` installed.
